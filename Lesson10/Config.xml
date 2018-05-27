@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="ConfigSchema.xsd">
+    <EndPoints>
+        <Endpoint>
+            <Type>bin</Type>
+            <IP>127.0.0.1</IP>
+            <Port>88</Port>  
+        </Endpoint>
+        <Endpoint>
+            <Type>http</Type>
+            <IP>127.0.0.1</IP>
+            <Port>80</Port>  
+        </Endpoint>
+    </EndPoints>
+    <LogFileName>D:\LogFile.txt</LogFileName>
+</Configuration>

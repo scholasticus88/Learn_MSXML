@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="Configuration">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="EndPoints" type="EndPointsList" minOccurs="1" maxOccurs="1" />
+                <xs:element name="LogFileName" type="LogFileNameType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="EndPointsList">
+        <xs:sequence>
+            <xs:element name="Endpoint" type="EndPointType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="EndPointType">
+        <xs:sequence>
+            <xs:element name="Type" type="EndPoinTypeEnum" />
+            <xs:element name="IP" type="IpType" />
+            <xs:element name="Port" type="xs:positiveInteger" />    
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="EndPoinTypeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="bin" />
+            <xs:enumeration value="http" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="LogFileNameType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5" />
+            <xs:maxLength value="250" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="IpType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-9]([0-9]([0-9]?))?.[0-9]([0-9]([0-9]?))?.[0-9]([0-9]([0-9]?))?.[0-9]([0-9]([0-9]?))?" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

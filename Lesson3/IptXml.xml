@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.johnysparadise.ic.cz/pokus IptXml.xsd"
+          xmlns="http://www.johnysparadise.ic.cz/pokus">
+  <Movie medium="DVD">
+    <Name>X Files</Name>
+    <Year>1998</Year>
+    <Over18>no</Over18>
+    <Actors>
+      <Actor>Gillian Anderson</Actor>
+      <Actor>David Duchovny</Actor>
+    </Actors>
+  </Movie>
+  <Movie medium="DVD">
+    <Name>Golden Eye</Name>
+    <Year>1999</Year>
+    <Over18>no</Over18>
+    <Actors>
+      <Actor>Famke Jansenn</Actor>
+    </Actors>
+  </Movie>
+  <Movie medium="DVD">
+    <Name>5 Keys of Pleasure</Name>
+    <Year>2008</Year>
+    <Over18>yes</Over18>
+    <Actors>
+    </Actors>
+  </Movie>
+  <Movie medium="DVD">
+    <Name>Entrapment</Name>
+    <Year>1996</Year>
+    <Over18>no</Over18>
+    <Actors>
+      <Actor>Catherine Zeta Jones</Actor>
+    </Actors>
+  </Movie>
+  <Movie medium="DVD">
+    <Name>Lord of the Rings</Name>
+    <Year>2010</Year>
+    <Over18>no</Over18>
+    <Actors>
+      <Actor>Frodo Pytlik</Actor>
+    </Actors>
+  </Movie>
+</Database>

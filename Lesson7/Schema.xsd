@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="movie_db"
+           elementFormDefault="qualified"> 
+
+<xs:element name="Database">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="Movie" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string" />
+                        <xs:element name="Year" type="xs:positiveInteger" />   
+                        <xs:element name="Over18">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="yes" />
+                                    <xs:enumeration value="no" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Actors">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Actor" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="medium" type="xs:string" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.johnysparadise.ic.cz/myschema Schema.xsd"
+      xmlns:a="http://www.johnysparadise.ic.cz/myschema">
+    <a:username>Honza</a:username>
+    <a:password>kuku</a:password>
+</a:User>
